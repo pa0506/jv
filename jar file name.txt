@@ -1,0 +1,12 @@
+ucanaccess-5.0.1.jar---https://sourceforge.net/projects/ucanaccess/files/UCanAccess-5.0.1.bin.zip/download
+
+jackcess-3.0.1.jar---https://sourceforge.net/projects/jackcess/files/latest/download
+
+hsqldb.jar---https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.5.0/
+
+commons-lang3-3.21.0.jar---https://commons.apache.org/lang/download_lang.cgi
+
+commons-logging-1.4.0.jar---https://commons.apache.org/logging/download_logging.cgi
+
+
+mysql-connector-j-26.1.0.jar---https://dev.mysql.com/downloads/connector/j/
