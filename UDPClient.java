@@ -26,6 +26,7 @@ public class UDPClient {
 
             System.out.println("Server: "
                 + new String(r.getData(), 0, r.getLength()));
+            System.out.println("Number of characters: " + msg.length());
         }
 
         s.close();
