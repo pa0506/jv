@@ -30,10 +30,18 @@ public class StudentForm extends JFrame {
         add(new JLabel("Output:")); add(new JScrollPane(out));
 
         sub.addActionListener(e -> {
-            out.setText("Name: " + name.getText()
-                + "\nRoll: " + roll.getText()
-                + "\nDept: " + dept.getSelectedItem()
-                + "\nGender: " + (male.isSelected() ? "Male" : "Female"));
+            String n = name.getText().trim();
+            String r = roll.getText().trim();
+
+            if (!n.matches("[a-zA-Z ]+"))
+                JOptionPane.showMessageDialog(this, "Enter valid name!");
+            else if (!r.matches("[0-9]+"))
+                JOptionPane.showMessageDialog(this, "Enter valid roll!");
+            else
+                out.setText("Name: " + n
+                    + "\nRoll: " + r
+                    + "\nDept: " + dept.getSelectedItem()
+                    + "\nGender: " + (male.isSelected() ? "Male" : "Female"));
         });
 
         setSize(350, 300);
