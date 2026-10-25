@@ -21,6 +21,7 @@ public class TCPClient {
                 break;
 
             System.out.println("Server: " + in.readLine());
+            System.out.println("Number of characters: " + msg.length());
         }
 
         s.close();
